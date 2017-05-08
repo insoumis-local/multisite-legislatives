@@ -1,0 +1,36 @@
+.DS_Store
+
+# -------------
+# CONFIG
+# -------------
+
+.htaccess
+nginx.conf
+wp-config.php
+
+# -------------
+# CACHE
+# -------------
+
+# Wordpress
+
+wp-content/cache/*
+!wp-content/cache/.placeholder
+
+# W3 Total Cache
+
+wp-content/advanced-cache.php
+wp-content/db.php
+wp-content/object-cache.php
+wp-content/w3tc-config
+
+# SASS
+
+.sass-cache
+
+# -------------
+# CONTENT
+# -------------
+
+wp-content/uploads/*
+!wp-content/uploads/.placeholder
