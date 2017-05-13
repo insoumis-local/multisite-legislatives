@@ -1,0 +1,3 @@
+[submodule "wp-content/themes/wordpress-template-legislatives"]
+	path = wp-content/themes/wordpress-template-legislatives
+	url = git@github.com:insoumis-local/wordpress-template-legislatives.git
