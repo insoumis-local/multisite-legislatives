@@ -1,0 +1,378 @@
+.rtec-wrapper {
+    box-sizing: border-box;
+}
+.rtec-radio-label {
+    margin-right: 20px;
+}
+.rtec-view-selector a{
+    display: inline-block;
+    margin: 1em 15px 1em 0;
+}
+.rtec-fade {
+    opacity: .7;
+}
+/*
+9EE6DE
+46A99E
+
+*/
+.rtec-clear:after {
+    display: table;
+    clear: both;
+    content: " ";
+    visibility: hidden;
+}
+.rtec-admin-2-columns {
+    width: 45.5%;
+    display: inline-block;
+}
+.rtec-single-event {
+    display: inline-block;
+    width: 47.5%;
+    margin: 0 2% 3em 0;
+}
+.rtec-single-event .rtec-event-meta,
+.rtec-single-event .rtec-event-actions {
+    background: #23282d;
+    border-radius: 3px 3px 0 0;
+}
+#rtec_csv_export_form {
+    display: inline-block;
+    vertical-align: top;
+}
+.rtec-single-event .rtec-event-actions {
+    border-radius: 0 0 3px 3px;
+}
+.rtec-event-meta {
+    position: relative;
+    padding: .25em 1em;
+    border: 1px solid #23282d;
+}
+.rtec-event-meta h3 {
+    margin: .25em 60px .25em 0;
+    color: #fff;
+}
+.rtec-event-meta a {
+    text-decoration: none;
+}
+.rtec-event-meta a h3:hover {
+    color: #00a0d2;
+}
+.rtec-event-meta p {
+    margin: 0 0 .25em;
+    color: #fff;
+}
+.rtec-event-meta .rtec-reg-info {
+    position: absolute;
+    width: 70px;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    padding: .25em 5px 0 0;
+    text-align: center;
+    border-radius: 0 4px 0 5px;
+}
+.rtec-single .rtec-event-meta .rtec-reg-info {
+    position: relative;
+    color: #333;
+    border-radius: 5px;
+}
+.rtec-event-meta .rtec-reg-info p {
+    color: inherit;
+}
+.rtec-primary-button {
+    background: #0085ba;
+    border-color: #0073aa #006799 #006799;
+    -webkit-box-shadow: 0 1px 0 #006799;
+    box-shadow: 0 1px 0 #006799;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 0 -1px 1px #006799,1px 0 1px #006799,0 1px 1px #006799,-1px 0 1px #006799;
+    display: inline-block;
+    font-size: 13px;
+    line-height: 26px;
+    height: 28px;
+    margin: 0;
+    padding: 0 10px 1px;
+    cursor: pointer;
+    border-width: 1px;
+    border-style: solid;
+    -webkit-appearance: none;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    white-space: nowrap;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.rtec-next { float: right; }
+.rtec-view-all,
+.rtec-button-link {
+    display: block;
+    text-align: center;
+    padding: 5px;
+    border: 1px solid;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+.rtec-admin-wrap .rtec-add-field {
+    width: 455px;
+    margin-bottom: 8px;
+}
+.rtec-single-event table td {
+    word-wrap: break-word;
+    max-width: 120px;
+}
+.rtec-wrapper .rtec-admin-secondary-button,
+.rtec-wrapper .tablenav a.button {
+    margin: 0 0 0 1em;
+    display: inline-block;
+}
+.rtec-overview .rtec-admin-secondary-button{
+    float: right;
+    margin: .5em 1em .5em 1em;
+}
+.rtec-admin-wrap .rtec-green-bg {
+    font-weight: 700;
+    background-color: #9EE6DE;
+    border-color: #46A99E;
+    color: #009688;
+}
+.rtec-admin-wrap .rtec-green-bg:hover,
+.rtec-admin-wrap .rtec-green-bg:active,
+.rtec-admin-wrap .rtec-green-bg:focus {
+    background-color: #CFF7F3;
+    color: #009688;
+}
+
+.rtec-admin-wrap .rtec-green-bg:focus {
+    border-color: #46A99E;
+    -webkit-box-shadow: 0 0 3px #46A99E;
+    box-shadow: 0 0 3px #46A99E;
+}
+
+/* Single */
+.rtec-single .rtec-single-event {
+    width: 100%;
+}
+.rtec-single table {
+    position: relative;
+}
+.rtec-single .rtec-single-event table td {
+    max-width: none;
+}
+.rtec-single table td input[type="checkbox"] {
+    width: auto;
+    margin: 0 0 0 8px;
+}
+.rtec-single table .rtec-checkbox {
+    padding: 11px 0 0 3px;
+}
+.rtec-single .rtec-event-actions {
+    padding-top: 1px;
+}
+.rtec-new-registration input,
+.rtec-reg-row input {
+    max-width: 100%;
+}
+.rtec-table-changing {
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    right: 50%;
+    left: 50%;
+}
+.rtec-first-data {
+    position: relative;
+}
+.rtec-notice-new {
+    position: absolute;
+    left: -15px;
+    top: -2px;
+    padding: 3px 4px 5px;
+    line-height: 1;
+    border-radius:50%;
+    background: #ff6600;
+    color: #fff;
+    font-size: 10px;
+}
+.rtec-field-options-wrapper {
+    width: 425px;
+}
+.rtec-field-options-wrapper,
+.rtec-availability-options-wrapper {
+    position: relative;
+    padding: 1em;
+    margin-bottom: .5em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #fbfbfb;
+}
+.rtec-field-options-wrapper h4,
+.rtec-availability-options-wrapper h4 {
+    margin: .5rem 0;
+}
+#rtec-message-text-wrapper-up,
+#rtec-message-text-wrapper-down,
+#rtec-message-text-wrapper-other {
+    margin-top: 0;
+}
+.rtec-field-options-wrapper h4 span {
+    font-size: 12px;
+    font-weight: normal;
+}
+.rtec-field-options-wrapper .rtec-other-input {
+    width: 300px;
+}
+.rtec-field-options-wrapper .rtec-valid-count-input {
+    width: 130px;
+}
+.rtec-availability-options-wrapper input[type=text] {
+    margin-right: 1em;
+}
+.rtec-custom-field-remove {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+.rtec-checkbox-row label {
+    margin-right: 1em;
+}
+.rtec-availability-options-wrapper {
+    margin: 1.5em 0 .5em;
+}
+.rtec-confirmation-message-tr td {
+    width: 400px;
+    vertical-align: top;
+}
+.rtec-button-wrapper {
+    display: block;
+}
+#rtec_registration_deadline {
+    width: 70px;
+}
+.rtec-admin-wrap .form-table tbody tr td .description {
+    display: block;
+    width: 415px;
+}
+.rtec-admin-wrap .form-table th {
+    min-width: 200px;
+}
+
+/* Tooltip table */
+.rtec-tooltip-table{
+    display: block;
+    width: 94%;
+    margin: 30px 0;
+}
+.rtec-tooltip-table .rtec-col-1,
+.rtec-tooltip-table .rtec-col-2{
+    padding: 4px 1%;
+    border-bottom: 1px solid #ddd;
+}
+.rtec-tooltip-table .rtec-col-1{
+    display: inline-block;
+    width: 26%;
+}
+.rtec-tooltip-table .rtec-col-2{
+    display: inline-block;
+    width: 70%;
+}
+
+.rtec-support-button {
+    border: none;
+    border-radius: 4px;
+    display: inline-block;
+    padding: 3px 6px 4px;
+    margin-bottom: 1em;
+    width: auto;
+    background-color: rgba(0, 102, 102, .8);
+    color: #fff !important;
+    text-decoration: none;
+    text-align: center;
+}
+.rtec-support-button:hover {
+    background-color: rgb(0, 102, 102);
+}
+.rtec-admin-event-registration-options-wrapper {
+    width: 100%;
+}
+.rtec-admin-event-registration-options-wrapper a {
+    float: right;
+}
+
+/** Styles added that can be removed once sortable elements introduced **/
+
+.rtec-wrapper .rtec-event-options.postbox.open .toggle-indicator:before {
+    content: "\f142";
+    display: inline-block;
+    font: 400 20px/1 dashicons;
+    speak: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-decoration: none!important;
+}
+.rtec-wrapper .rtec-event-options.postbox.closed .toggle-indicator:before {
+    content: "\f140";
+    display: inline-block;
+    font: 400 20px/1 dashicons;
+    speak: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-decoration: none!important;
+}
+
+.rtec-event-options.postbox {
+    margin-bottom: 0;
+    padding: 8px 2px 8px 10px;
+    background: #e5e5e5;
+    border: 1px solid #bbb;
+    cursor: auto;
+}
+.rtec-event-options.postbox .handlediv {
+    width: 32px;
+    height: 32px;
+    margin-top: -8px;
+}
+.rtec-event-options.postbox .hndle {
+    cursor: pointer;
+    border-bottom: none;
+}
+.rtec-event-options .rtec-update-event-options {
+    float: left;
+    margin: 16px 0 0;
+}
+
+@media all and (max-width: 910px) and (min-width: 600px){
+    .rtec-overview .rtec-single-event tr th:nth-child(4),
+    .rtec-overview .rtec-single-event tr td:nth-child(4) {
+        display: none;
+    }
+}
+
+@media all and (max-width: 600px){
+    .rtec-overview .rtec-single-event,
+    .rtec-overview .rtec-single-event {
+        width: 100%;
+        margin: 2em 2% 2em 2%;
+    }
+}
+
+/* hidden event options */
+.rtec-hidden-option-wrap {
+    margin-bottom: 10px;
+}
+.rtec-sameline {
+    display: inline-block;
+}
+.rtec-sameline label {
+    margin-right: 10px;
+}
+.rtec-hidden-option-wrap code,
+#rtec-event-details code{
+    line-height: 2.0;
+}
+.rtec-hidden-options h4 {
+    margin-bottom: .66em;
+}
