@@ -2,14 +2,14 @@
 Contributors: formidableforms, sswells, srwells, jamie.wahlin
 Tags: form, contact form, form builder, custom form, forms, form maker, form creator
 Requires at least: 3.8
-Tested up to: 4.7.4
-Stable tag: 2.03.07
+Tested up to: 4.7.5
+Stable tag: 2.03.09
 
 The best WordPress form plugin. Simple drag & drop form building, visual form styling, and unlimited email notifications. 
 
 == Description ==
 = WordPress Form Builder Plugin =
-Formidable Forms is a flexible and free WordPress form plugin. Easily create contact forms, polls and surveys, or lead generation forms. Start with pre-built form templates or create totally custom forms. From the smallest sidebar opt-in form to large job application forms, Formidable Forms is built to do it all.
+Formidable Forms is a flexible and free WordPress form plugin. Easily create contact forms, polls and surveys, or lead generation forms. Start with pre-built form templates or create totally custom forms. From the smallest sidebar opt-in form to large job application forms, Formidable is built to do it all.
 
 Create professional contact forms without any code. Use the built-in visual styler to instantly customize the look and feel of your forms. Additionally,  changing the form layout is simple with included layout classes. If you need more advanced customizations, you have complete access to edit the form HTML and CSS.
 
@@ -97,6 +97,44 @@ A. The field and form names and descriptions are all changed with in-place edit.
 [See more FAQs](https://formidableforms.com/formidable-faqs/ "Formidable Form FAQs")
 
 == Changelog ==
+
+= 2.03.09 =
+* New: Add frmStartFormLoading and frmEndFormLoading jQuery events.
+* **Pro Version** *
+* New: Add frm_set_and_or_for_lookup filter to allow for filtering lookups that match every value.
+* Fix: Do not clear field values when previous page is conditionally hidden.
+* Fix: Don't include combo field description html with empty description.
+
+= 2.03.08 =
+* New: Add frm_label_justify CSS layout class to justify text in long labels
+* Fix: Prevent XSS errors in Chrome when saving a form on the back-end
+* Fix: Remove extra space between textarea and description.
+* Fix: Resolve errors in frm_entries_footer_scripts action call.
+* Fix: Decrease size of file path for automatic updates to avoid hitting file path limits on Windows servers.
+* Fix: Improve checkbox and radio styling with Bootstrap active.
+* Fix: Remove Bootstrap error class with js validation.
+* **Pro Version** *
+* New: Add unique date/time validation back into plugin.
+* New: Add custom jQuery events that fire before form redirect (frmBeforeFormRedirect) and after deleting/adding a row (frmAfterRemoveRow/frmAfterAddRow).
+* New: Add frm_full_upload CSS Layout Class.
+* Enhancement: Remove deprecated safe_mode references.
+* Enhancement: Allow descriptions to be set in all sub fields.
+* Enhancement: Display a 0 in numeric calculations rather than a blank value.
+* Enhancement: Add [event_date] shortcode in View sidebar.
+* Enhancement: Check required fields before uploading file.
+* Enhancement: Add Parent Entry ID column to entry listing page.
+* Enhancement: Allow Formidable shortcodes as auto_id prefix or suffix.
+* Fix: Improve styling for Other text box in horizontal radio or checkbox field
+* Fix: Switch Cancel Link back to Edit after entry is updated in-place.
+* Fix: Allow quotes in update link value.
+* Fix: Prevent other option from showing when using [input opt=1].
+* Fix: Skip content shortcode checks that have already been run.
+* Fix: Do not treat 0 value as empty in conditional shortcode.
+* Fix: Calculate median properly for stats.
+* Fix: Do not rely on field order to check if a field is conditionally hidden.
+* Fix: Include the html to set a dynamic field to multiple on the form builder page.
+* Fix: Get form and section ID correctly when existing field is dragged into a section.
+* Fix: Do not replace values in fields watching Lookups on edit.
 
 = 2.03.07 =
 * New: Add frm_after_import_view hook.

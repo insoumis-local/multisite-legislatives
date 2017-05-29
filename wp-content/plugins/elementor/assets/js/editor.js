@@ -1,4 +1,4 @@
-/*! elementor - v1.4.7 - 18-05-2017 */
+/*! elementor - v1.4.8 - 28-05-2017 */
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
 var HandleAddDuplicateBehavior;
 
@@ -2552,6 +2552,10 @@ EditorView = ControlsStack.extend( {
 		ControlsStack.prototype.activateSection.apply( this, arguments );
 
 		elementor.channels.editor.trigger( 'section:activated', sectionName, this );
+	},
+
+	isVisibleSectionControl: function( sectionControlModel ) {
+		return ControlsStack.prototype.isVisibleSectionControl.apply( this, arguments ) && elementor.helpers.isActiveControl( sectionControlModel, this.model.get( 'settings' ).attributes );
 	},
 
 	onBeforeRender: function() {
@@ -7133,29 +7137,34 @@ ControlsStack = Marionette.CompositeView.extend( {
 		this.listenTo( elementor.channels.deviceMode, 'change', this.onDeviceModeChange );
 	},
 
-	filter: function( model ) {
-		if ( model.get( 'tab' ) !== this.activeTab ) {
+	filter: function( controlModel ) {
+		if ( controlModel.get( 'tab' ) !== this.activeTab ) {
 			return false;
 		}
 
-		if ( 'section' === model.get( 'type' ) ) {
+		if ( 'section' === controlModel.get( 'type' ) ) {
 			return true;
 		}
 
-		var section = model.get( 'section' );
+		var section = controlModel.get( 'section' );
 
 		return ! section || section === this.activeSection;
 	},
 
+	isVisibleSectionControl: function( sectionControlModel ) {
+		return this.activeTab === sectionControlModel.get( 'tab' );
+	},
+
 	activateTab: function( $tab ) {
-		var activeTab = this.activeTab = $tab.data( 'tab' );
+		var self = this,
+			activeTab = this.activeTab = $tab.data( 'tab' );
 
 		this.ui.tabs.removeClass( 'active' );
 
 		$tab.addClass( 'active' );
 
-		var sectionControls = this.collection.filter( function( model ) {
-			return 'section' === model.get( 'type' ) && activeTab === model.get( 'tab' );
+		var sectionControls = this.collection.filter( function( controlModel ) {
+			return 'section' === controlModel.get( 'type' ) && self.isVisibleSectionControl( controlModel );
 		} );
 
 		if ( sectionControls[0] ) {

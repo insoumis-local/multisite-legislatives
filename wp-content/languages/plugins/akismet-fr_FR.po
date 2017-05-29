@@ -47,7 +47,7 @@ msgstr "Statistiques"
 msgid "Detailed Stats"
 msgstr "Stats détaillées"
 
-#: class.akismet.php:456
+#: class.akismet.php:451
 msgid "Comment not found."
 msgstr "Commentaire non trouvé."
 
@@ -427,7 +427,7 @@ msgstr "Il n&#8217;y a rien dans votre  <a href='%s'>file d'attente d'indésirab
 msgid "Cleaning up spam takes time."
 msgstr "Nettoyer les commentaires indésirables prend du temps."
 
-#: class.akismet.php:1146
+#: class.akismet.php:1174
 msgid "Akismet %s requires WordPress %s or higher."
 msgstr "Akismet %s requiert WordPress %s ou supérieur."
 
@@ -599,7 +599,7 @@ msgstr "L'état de l'abonnement - actif, annulé ou suspendu"
 msgid "Akismet FAQ"
 msgstr "FAQ d'Askimet"
 
-#: class.akismet.php:1146
+#: class.akismet.php:1174
 msgid "Please <a href=\"%1$s\">upgrade WordPress</a> to a current version, or <a href=\"%2$s\">downgrade to version 2.4 of the Akismet plugin</a>."
 msgstr "Veuillez passer à la <a href=\"%1$s\">dernière version de WordPress</a> ou <a href=\"%2$s\">revenir à la version 2.4 de l'extension Akismet</a>."
 

@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Easy Forms for MailChimp - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2017-05-03 19:28:27+0000\n"
+"PO-Revision-Date: 2017-05-18 17:49:06+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -16,14 +16,14 @@ msgstr ""
 #: admin/partials/ajax/add_field_to_form.php:236
 #: admin/partials/ajax/add_interest_group_to_form.php:182
 msgid "By default the description will appear undearneath the field. Check this box if you'd like the description to appear above the field."
-msgstr "Par défaut, la description s’affiche sous le champ. Cochez cette case si vous voudriez que la description d’apparaître au-dessus du champ."
+msgstr "Par défaut, la description apparaîtra sous le champ. Cochez cette case si vous souhaitez que la description apparaisse au dessus du champ."
 
 #: admin/class-yikes-inc-easy-mailchimp-extender-admin.php:2028
 #: admin/class-yikes-inc-easy-mailchimp-extender-admin.php:2298
 #: admin/partials/ajax/add_field_to_form.php:231
 #: admin/partials/ajax/add_interest_group_to_form.php:177
 msgid "Description Above Field"
-msgstr "Description au-dessus du champ"
+msgstr "Description au dessus du champ"
 
 #: admin/partials/menu/options-sections/general-settings.php:42
 msgid "Enable nonce validation on this site?"
@@ -304,27 +304,27 @@ msgstr "Impossible de trouver les données du groupe d'intérêt."
 msgid "Could not find the list id. "
 msgstr "Impossible de trouver l’ID de la liste."
 
-#: admin/class-yikes-inc-easy-mailchimp-extender-admin.php:2829
+#: admin/class-yikes-inc-easy-mailchimp-extender-admin.php:2831
 msgid "This email was sent from: %s"
 msgstr "Courriel envoyé par : %s"
 
-#: admin/class-yikes-inc-easy-mailchimp-extender-admin.php:2826
+#: admin/class-yikes-inc-easy-mailchimp-extender-admin.php:2828
 msgid "If you did not request this update, please disregard this email."
 msgstr "Si vous n’avez pas demandé cette mise à jour, veuillez ignorer ce message."
 
-#: admin/class-yikes-inc-easy-mailchimp-extender-admin.php:2822
+#: admin/class-yikes-inc-easy-mailchimp-extender-admin.php:2824
 msgid "Update MailChimp Profile Info"
 msgstr "Mise à jour d’informations de profil de MailChimp"
 
-#: admin/class-yikes-inc-easy-mailchimp-extender-admin.php:2820
+#: admin/class-yikes-inc-easy-mailchimp-extender-admin.php:2822
 msgid " To do so please use the following link: "
 msgstr "De le faire s’il vous plaît utilisez le lien suivant :"
 
-#: admin/class-yikes-inc-easy-mailchimp-extender-admin.php:2816
+#: admin/class-yikes-inc-easy-mailchimp-extender-admin.php:2818
 msgid "Greetings,"
 msgstr "Salutations,"
 
-#: admin/class-yikes-inc-easy-mailchimp-extender-admin.php:2819
+#: admin/class-yikes-inc-easy-mailchimp-extender-admin.php:2821
 msgid "A request has been made to update your MailChimp account profile information."
 msgstr "Une demande a été faite pour mettre à jour les informations de votre profil de compte MailChimp."
 
@@ -559,11 +559,11 @@ msgstr "Ajouter le champ à la formulaire"
 msgid "Get Merge Variables"
 msgstr "Obtenir les variables fusion"
 
-#: admin/class-yikes-inc-easy-mailchimp-extender-admin.php:2854
+#: admin/class-yikes-inc-easy-mailchimp-extender-admin.php:2856
 msgid "Manage List Page"
 msgstr "Gérer la liste Page"
 
-#: admin/class-yikes-inc-easy-mailchimp-extender-admin.php:2853
+#: admin/class-yikes-inc-easy-mailchimp-extender-admin.php:2855
 msgid "Unsubscribe User"
 msgstr "Se désabonner utilisateur"
 
@@ -856,7 +856,6 @@ msgid "Show a different month"
 msgstr "Montrer un autre mois"
 
 #: admin/class-yikes-inc-easy-mailchimp-extender-admin.php:786
-#: public/partials/shortcodes/process_form_shortcode.php:908
 msgid "Today"
 msgstr "Aujourd'hui"
 
@@ -1322,7 +1321,7 @@ msgid "There was an error during import. If you continue to run into issues, ple
 msgstr "Il y avait une erreur lors de l’importation. Si vous continuez à rencontrer des problèmes, veuillez rejoindre l’équipe de soutien à Yikes Inc."
 
 #. #-#-#-#-#  yikes-inc-easy-mailchimp-extender-code.pot (Easy Forms for
-#. MailChimp 6.3.18)  #-#-#-#-#
+#. MailChimp 6.3.19)  #-#-#-#-#
 #. Plugin Name of the plugin/theme
 #: admin/class-yikes-inc-easy-mailchimp-extender-admin.php:682
 #: admin/class-yikes-inc-easy-mailchimp-extender-admin.php:683
@@ -1439,7 +1438,7 @@ msgid "Please enter a valid URL to the website."
 msgstr "S'il vous plaît entrer une URL valide sur le site."
 
 #: public/partials/shortcodes/process_form_shortcode.php:372
-#: public/partials/shortcodes/process_form_shortcode.php:1122
+#: public/partials/shortcodes/process_form_shortcode.php:1091
 msgid "This field is required."
 msgstr "Champ obligatoire."
 
@@ -2101,9 +2100,9 @@ msgstr "Merci :)"
 #: admin/class-yikes-inc-easy-mailchimp-extender-admin.php:2641
 #: admin/class-yikes-inc-easy-mailchimp-extender-admin.php:2674
 #: admin/class-yikes-inc-easy-mailchimp-extender-admin.php:2708
-#: admin/class-yikes-inc-easy-mailchimp-extender-admin.php:2845
-#: admin/class-yikes-inc-easy-mailchimp-extender-admin.php:2867
-#: admin/class-yikes-inc-easy-mailchimp-extender-admin.php:2891
+#: admin/class-yikes-inc-easy-mailchimp-extender-admin.php:2847
+#: admin/class-yikes-inc-easy-mailchimp-extender-admin.php:2869
+#: admin/class-yikes-inc-easy-mailchimp-extender-admin.php:2893
 msgid "We've run into an error. The security check didn't pass. Please try again."
 msgstr "Nous avons rencontré une erreur. La vérification de la sécurité n’est pas passé. S’il vous plaît essayer de nouveau."
 
@@ -2114,9 +2113,9 @@ msgstr "Nous avons rencontré une erreur. La vérification de la sécurité n’
 #: admin/class-yikes-inc-easy-mailchimp-extender-admin.php:2641
 #: admin/class-yikes-inc-easy-mailchimp-extender-admin.php:2674
 #: admin/class-yikes-inc-easy-mailchimp-extender-admin.php:2709
-#: admin/class-yikes-inc-easy-mailchimp-extender-admin.php:2845
-#: admin/class-yikes-inc-easy-mailchimp-extender-admin.php:2867
-#: admin/class-yikes-inc-easy-mailchimp-extender-admin.php:2891
+#: admin/class-yikes-inc-easy-mailchimp-extender-admin.php:2847
+#: admin/class-yikes-inc-easy-mailchimp-extender-admin.php:2869
+#: admin/class-yikes-inc-easy-mailchimp-extender-admin.php:2893
 msgid "Failed nonce validation"
 msgstr "L’action a échoué. Nonce invalide."
 
